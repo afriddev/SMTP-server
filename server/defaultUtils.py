@@ -1,2 +1,2 @@
 defaultEmail = "defaultemailapi@gmail.com"
-defaultPasskey = "jxss axeo cuov wrkv"
+defaultPasskey = " 16 digits app password"
