@@ -17,6 +17,7 @@ from server import defaultEmail, defaultPasskey
 from sendMethods import sendCustom
 import re
 import requests as r
+from fastapi.middleware.cors import CORSMiddleware
 
 """
 
@@ -42,7 +43,13 @@ initalize fastapi
 
 """
 app = FastAPI()
-
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 """
 
